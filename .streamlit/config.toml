@@ -1,0 +1,41 @@
+[server]
+# ---------------------------------------------------------------------------
+# RecoTrust V5.1 — Configuration production-ready
+# ---------------------------------------------------------------------------
+# Limite d'upload : 4 Go (4096 Mo) — couvre fichiers partenaires ~3 Go — dimensionnée pour multi-utilisateurs.
+# Les fichiers métier typiques restent largement sous cette limite.
+# Ajuster uniquement si un partenaire dépasse 4 Go.
+maxUploadSize = 4096
+# Taille max des messages WebSocket / payload (Mo)
+maxMessageSize = 4096
+# Protection CSRF Streamlit (obligatoire en production)
+enableXsrfProtection = true
+# Pas de CORS ouvert — l'accès se fait via reverse-proxy interne
+enableCORS = false
+# Compression WebSocket (latence réduite)
+enableWebsocketCompression = true
+# Mode headless (pas de navigateur automatique au démarrage)
+headless = true
+# File watcher désactivé en prod (stabilité + CPU)
+fileWatcherType = "none"
+
+[browser]
+gatherUsageStats = false
+serverAddress = "localhost"
+serverPort = 8501
+
+[theme]
+primaryColor = "#023e8a"
+backgroundColor = "#f4f6f8"
+secondaryBackgroundColor = "#e8eef5"
+textColor = "#000000"
+font = "sans serif"
+
+[runner]
+# Re-runs plus rapides (état conservé)
+fastReruns = true
+
+[client]
+# UI production : tooling minimal, pas de détails d'erreur techniques exposés
+toolbarMode = "minimal"
+showErrorDetails = false

@@ -1,0 +1,38 @@
+{
+  "eliezer.tanoh@paymetrust.net": {
+    "active": true,
+    "display_name": "Eliezer Tanoh",
+    "password_hash": "pbkdf2$120000$89aebe5c0dc792902097282ed2d24693$24b81d7824c0044cc49de2d08cc87f1f6b0be5fe19f51e205e37d7f66afa1381",
+    "role": "USER"
+  },
+  "franck.ouraga@paymetrust.net": {
+    "active": true,
+    "display_name": "Franck Ouraga",
+    "password_hash": "pbkdf2$120000$89aebe5c0dc792902097282ed2d24693$24b81d7824c0044cc49de2d08cc87f1f6b0be5fe19f51e205e37d7f66afa1381",
+    "role": "USER"
+  },
+  "joel.nando@paymetrust.net": {
+    "active": true,
+    "display_name": "Joel Nando",
+    "password_hash": "pbkdf2$120000$89aebe5c0dc792902097282ed2d24693$24b81d7824c0044cc49de2d08cc87f1f6b0be5fe19f51e205e37d7f66afa1381",
+    "role": "USER"
+  },
+  "niamkey.nguessan@paymetrust.net": {
+    "active": true,
+    "display_name": "Niamkey Nguessan",
+    "password_hash": "pbkdf2$120000$89aebe5c0dc792902097282ed2d24693$24b81d7824c0044cc49de2d08cc87f1f6b0be5fe19f51e205e37d7f66afa1381",
+    "role": "USER"
+  },
+  "parfait.ngoran@paymetrust.net": {
+    "active": true,
+    "display_name": "Parfait Ngoran",
+    "password_hash": "pbkdf2$120000$89aebe5c0dc792902097282ed2d24693$24b81d7824c0044cc49de2d08cc87f1f6b0be5fe19f51e205e37d7f66afa1381",
+    "role": "ADMIN"
+  },
+  "pegard.kouadja@paymetrust.net": {
+    "active": true,
+    "display_name": "Pegard Kouadja",
+    "password_hash": "pbkdf2$120000$89aebe5c0dc792902097282ed2d24693$24b81d7824c0044cc49de2d08cc87f1f6b0be5fe19f51e205e37d7f66afa1381",
+    "role": "USER"
+  }
+}

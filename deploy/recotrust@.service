@@ -1,0 +1,38 @@
+# RecoTrust — unité systemd template multi-instances
+# Usage :
+#   sudo cp deploy/recotrust@.service /etc/systemd/system/
+#   sudo systemctl daemon-reload
+#   sudo systemctl enable --now recotrust@8501
+#   sudo systemctl enable --now recotrust@8502
+#   sudo systemctl enable --now recotrust@8503
+#
+# %i = port d'écoute (8501, 8502, ...)
+# Toutes les instances DOIVENT partager le même RECOTRUST_DATA_DIR.
+
+[Unit]
+Description=RecoTrust instance :%i
+After=network.target
+
+[Service]
+Type=simple
+User=recotrust
+Group=recotrust
+WorkingDirectory=/opt/recotrust
+Environment=RECOTRUST_DATA_DIR=/var/lib/recotrust/data
+Environment=RECOTRUST_LOG_DIR=/var/log/recotrust
+Environment=PATH=/opt/recotrust/.venv/bin:/usr/local/bin:/usr/bin
+ExecStart=/opt/recotrust/.venv/bin/streamlit run main.py \
+  --server.address 127.0.0.1 \
+  --server.port %i \
+  --server.headless true \
+  --browser.gatherUsageStats false
+Restart=on-failure
+RestartSec=5
+# Ajuster selon capacité hôte / nombre d'instances
+MemoryMax=4G
+CPUQuota=150%
+NoNewPrivileges=true
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target

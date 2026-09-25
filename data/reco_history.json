@@ -1,0 +1,50 @@
+[
+{
+"id": "0c1cb0f7",
+"ts": "2026-09-25T16:06:35.390749+00:00",
+"user": "parfait.ngoran@paymetrust.net",
+"reco_type": "Payment",
+"partner": "Moov CI",
+"status": "completed",
+"duration_sec": 3.34,
+"pmt_file": "20260920_MOOV_CI_extraction_2026-09-19.csv",
+"partner_file": "MOOVCI_PAYIN_ALL_260919.csv",
+"match_col_pmt": "ID Opérateur",
+"match_col_partner": "Receipt No.",
+"error": "",
+"reco_start": "2026-09-19",
+"reco_end": "2026-09-19"
+},
+{
+"id": "f4f36bdc",
+"ts": "2026-09-25T12:00:21.130769+00:00",
+"user": "parfait.ngoran@paymetrust.net",
+"reco_type": "Payment",
+"partner": "OM BF",
+"status": "completed",
+"duration_sec": 7.59,
+"pmt_file": "OMBF_payment__20260923.csv",
+"partner_file": "TH_54474492_.xlsx",
+"match_col_pmt": "Transaction ID",
+"match_col_partner": "FTXN_ID",
+"error": "",
+"reco_start": "2026-09-23",
+"reco_end": "2026-09-23"
+},
+{
+"id": "74f18c96",
+"ts": "2026-09-25T11:27:23.966147+00:00",
+"user": "parfait.ngoran@paymetrust.net",
+"reco_type": "Payment",
+"partner": "OM BF",
+"status": "completed",
+"duration_sec": 7.61,
+"pmt_file": "OMBF_payment__20260923.csv",
+"partner_file": "TH_54474492_.xlsx",
+"match_col_pmt": "Transaction ID",
+"match_col_partner": "FTXN_ID",
+"error": "",
+"reco_start": "2026-09-23",
+"reco_end": "2026-09-23"
+}
+]
